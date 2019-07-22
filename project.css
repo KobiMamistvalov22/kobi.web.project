@@ -1,0 +1,39 @@
+body{
+	background-image: url("pw.jpg");
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+textarea{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	color: blue;
+}
+input{
+	width: 200px;
+	background: green;
+	color: white;
+}
+
+#cardH {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px; 
+		width: 30rem;
+		height: 25rem;
+}
+.mosheTtl{
+	color: red;
+	font-size: 40px;
+}
+.omerCont{
+	color: magenta;
+	font-size: 30px;
+}
+.mosheTtl:hover{
+	cursor: cell;
+	color: green;
+	font-size: 40px;
+}

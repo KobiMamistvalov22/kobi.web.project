@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>project</title>
+		<link rel="stylesheet" href="bootstrap.css"/>
+		<link rel="stylesheet" href="project.css" />
+		<link rel="stylesheet" href="projectprotri.css" />
+		<link rel="stylesheet" href="projectlandi.css" />
+		<script src="jQuery.js"></script>
+		<script src="bootstrap.js"></script>
+		<script src="project.js"></script>
+	</head>
+	<body>
+	<div  class="container-fluid">
+		<nav class="navbar navbar-dark bg-primary row">
+				<a class="navbar brand text-light">ToDo List</a>
+				<div id="logi">
+					<button id="loginBtn1" class="btn btn-secondary">login</button>
+				</div>
+				<div id="logo" hidden>
+					<button onclick="logout();" id="logout" class="btn btn-secondary">logout</button>
+				</div>
+		</nav>
+			<div id="alert" class="modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h3>welcome to my app</h3>
+						<button class="close">&#xd7;</button>
+					</div>
+					<div class="modal-body">
+					<div id="loginCard" class="row justify-content-center">
+						<div class="card">
+							<div class="card-header">Login</div>
+							<div class="card-body form group">
+								<div class="input-group">
+									<div class="input-group-prepend">
+									<span  class="input-group-text">User email</span>
+									</div>
+									<input id="user"  value="@" class="form-control col-*" type="Email" placeholder="Enter your email"/>
+								</div>
+								<div class="input-group">
+									<div class="input-group-prepend">
+									<span class="input-group-text">Password</span>
+									</div>
+									<input id="pass" value="1" class="form-control col-*" type="password" placeholder="Enter your password"/>
+								</div>
+							
+							</div>
+							<div class="card-footer">
+							<button id="loginBtn2" class="btn btn-outline-primary" onclick="check();">Login</button>
+							<button id="regBtn1" class="btn btn-success float-right">Register</button>
+										
+							</div>								
+							
+						</div>
+					</div>
+					<div id="registCard" class="row justify-content-center" style="display:none;">
+						<div class="card">
+							<div class="card-header">Register</div>
+							<div class="card-body form group">
+								<div class="input-group">
+									<div class="input-group-prepend">
+									<span class="input-group-text">User email</span>
+									</div>
+									<input  id="userName" class="form-control col-*" type="Email" placeholder="Enter your email"/>
+								</div>
+								
+								<div class="input-group">
+									<div class="input-group-prepend">
+									<span class="input-group-text">Password</span>
+									</div>
+									<input  id="password" class="form-control col-*" type="password"  placeholder="Enter your password"/>
+								</div>
+							</div>
+							<div class="card-footer">
+								<button id="regBtn2" class="btn btn-outline-primary" onclick="store();">Register</button>
+								<button id="loginBtn3" class="btn btn-success float-right">Login</button>
+										
+							</div>								
+							
+						</div>
+					</div>
+					</div>
+					
+					</div>
+				</div>
+			</div>
+			<section id="secPrimary">
+			<div id="section1">
+			<div id="cardH" class="card row" class="bubu">
+				<img class="card-img-top" src="mot.jpg" style="width: 100%; height: 11rem;" alt="Card image cap">
+				<div class="card-body">
+					<h3 style="text-align: center;" class="card-title">welcome to our app!</h3>
+					<p style="color: blue;" class="card-text">Welcome to the todolist of motorcycles.
+										To get started and start making lists for your motorcycles 
+										you must register for the application first.</p>
+				</div>
+			</div>
+			</div>
+			<div id="section2" hidden>
+				<div id="displayNote">
+					
+				</div>
+				<div id="editForm" hidden>
+					<input type="text" placeholder="enter note title" id="newTitleNote"/><br/>
+					<textarea id="newTextNote" placeholder="enter your note"></textarea>
+					<button id="cancel" class="btn btn-danger" placeholder="cancel">cancel</button>
+					<button id="editDone" class="btn btn-success" placeholder="done">done</button>
+				</div>
+				
+				<button class="btn btn-warning" id="addNote">Add note</button>
+				<div id="addNoteForm" hidden>
+				<input type="text" placeholder="enter note title" id="titleNote"/><br/>
+						<textarea id="textNote" placeholder="enter your note"></textarea>
+						<button class="btn btn-danger" id="delNote" placeholder="del">del</button>
+						<button class="btn btn-success" id="saveNote" placeholder="save">save</button>
+						
+						
+				
+				</div>
+			</div>
+			</section>
+			
+	</div>
+
+	</body>
+</html>
